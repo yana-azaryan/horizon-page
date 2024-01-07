@@ -1,0 +1,27 @@
+@import '../../../styles/shared';
+@import '../../../styles/shared/fonts.scss';
+
+.accordionHeader {
+  background: none;
+  border: none;
+  display: flex;
+  font: 600 18px/24px $font-sans;
+  padding: $site-spacing-md 0;
+}
+
+.dropdownIcon {
+  height: $site-spacing-md;
+  transition: transform 0.3s ease;
+  width: $site-spacing-md;
+  margin-left: $site-spacing-md;
+
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+.accordionContent {
+  padding-left: $site-spacing-sm;
+  font: 400 18px/24px $font-sans;
+  padding-bottom: $site-spacing-md;
+}

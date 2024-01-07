@@ -1,0 +1,33 @@
+[data-theme='light'] {
+  --primary-text-color: #{$type-black};
+  --secondary-text-color: #{$dark-gray};
+  --tertiary-text-color: #{$dark-gray};
+  --primary-bg-color: #{$site-white};
+  --secondary-bg-color: #{$pale-gray};
+  --ad-label-color: #{$dark-gray};
+  --button-bg-color: #{$pale-gray};
+  --button-text-color: #{$type-black};
+  --background-color: #{$white};
+  --text-color: #{$type-black};
+  --hover-background-color: #{$extra-light-gray};
+  --primary-border-color: #{$pale-gray};
+  --secondary-border-color: #{$site-black};
+  --box-shadow-color: #{0, 0, 0};
+}
+
+[data-theme='dark'] {
+  --primary-text-color: #{$white};
+  --secondary-text-color: #{$pale-gray};
+  --tertiary-text-color: #{$white};
+  --primary-bg-color: #{$site-black};
+  --secondary-bg-color: #{$dark-gray};
+  --ad-label-color: #{$medium-gray};
+  --button-bg-color: #{$type-black};
+  --button-text-color: #{$pale-gray};
+  --background-color: #{$site-black};
+  --text-color: #{$white};
+  --hover-background-color: #{$type-black};
+  --primary-border-color: #{$pale-gray};
+  --secondary-border-color: #{$site-white};
+  --box-shadow-color: #{255, 255, 255};
+}

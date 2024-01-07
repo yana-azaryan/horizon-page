@@ -1,0 +1,23 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+
+.inline {
+  display: inline;
+
+  &.shouldInlineInnerHtml {
+    p,
+    div {
+      display: inline;
+    }
+  }
+}
+
+.expandBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: 600 $site-spacing-sm $font-sans;
+  margin-left: 2px;
+  outline: none;
+  padding: 0;
+}

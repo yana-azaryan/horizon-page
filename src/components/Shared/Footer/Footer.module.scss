@@ -1,0 +1,110 @@
+@import '../../../styles/shared';
+
+.footerContent {
+  padding-top: 24px;
+
+  @include respond-to('xsmall') {
+    padding: 16px 0;
+  }
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $type-black;
+}
+
+.contactsContainer {
+  background: var(--background-color);
+  color: var(--text-color);
+  display: block;
+  padding: 10px;
+  width: 100%;
+
+  @include respond-to('xsmall') {
+    padding: 10px 20px;
+  }
+
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+
+  img {
+    height: 60px;
+    width: 120px;
+  }
+}
+
+.email,
+.location {
+  display: flex;
+  height: 20px;
+  margin: 8px 0;
+
+  p {
+    align-self: center;
+  }
+
+  img {
+    height: 20px;
+    margin-right: 8px;
+    width: 20px;
+  }
+}
+
+.socialShareBlock {
+  align-items: center;
+}
+
+.button {
+  margin-left: 30px;
+
+  @include respond-to('medium') {
+    margin-left: 50px;
+    width: 150px;
+  }
+}
+
+.branding {
+  border-bottom: 1px solid $pale-gray;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px;
+
+  @include respond-to('xsmall') {
+    display: block;
+    padding: 16px;
+  }
+}
+
+.link {
+  padding: 10px 15px;
+  text-align: center;
+
+  &:hover {
+    color:  #bbe789;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}

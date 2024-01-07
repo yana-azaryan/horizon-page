@@ -1,0 +1,36 @@
+@import '../../../styles/shared';
+
+@mixin containerClasses($width) {
+  $width-value: map-get($container-sizes, $width);
+
+  .container-#{$width} {
+    max-width: $width-value;
+  }
+}
+
+@include containerClasses('xl');
+@include containerClasses('lg');
+@include containerClasses('md');
+@include containerClasses('sm');
+
+.container {
+  margin: 0 auto;
+  padding-inline: $site-spacing-sm;
+  width: 100%;
+
+  @include respond-to('xsmall') {
+    padding-inline: $site-spacing-md;
+  }
+
+  @include respond-to('medium') {
+    padding-inline: $site-spacing-lg;
+  }
+
+  @include respond-to('large') {
+    padding-inline: $site-spacing-xlg;
+  }
+
+  &.disableGutters {
+    padding: 0;
+  }
+}

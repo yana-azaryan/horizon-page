@@ -1,0 +1,81 @@
+@import '../../../styles/shared';
+@import '../../../styles/shared/fonts.scss';
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.container {
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.introduction {
+  @include respond-to('medium') {
+    width: 40%;
+  }  
+
+  @include respond-to('large') {
+    width: 30%;
+  }  
+}
+
+.descriptionContainer {
+  margin-top: $site-spacing-lg;
+
+  @include respond-to('medium') {
+    margin: 0;
+    width: 50%;
+  }  
+
+  @include respond-to('large') {
+    width: 60%;
+  }  
+}
+
+.reverse {
+  .introduction {
+    order: 2;
+  }
+  .descriptionContainer {
+    order: 1;
+  }
+}
+
+.description {
+  font: 400 20px/32px $font-sans;
+  letter-spacing: 0.5px;
+  margin-bottom: $site-spacing-md;
+}
+
+.sectionTitle {
+  color: $glitch;
+  font: 600 50px/48px $font-merriweather;
+  margin: 0;
+}
+
+.slogan {
+  font: 500 24px/26px $font-sans;
+}
+
+.divider {
+  border-bottom: 1px solid var(--primary-text-color);
+  margin: $site-spacing-md 0;
+  width: 30%;
+}
+
+.ctaButton {
+  margin-top: $site-spacing-md;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,21 @@
+/* latin-ext */
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+    url('https://i.forbesimg.com/assets/fonts/work-sans/work_sans_600_latin_ext.woff2')
+      format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+    url('https://i.forbesimg.com/assets/fonts/work-sans/work_sans_600_latin.woff2')
+      format('woff2');
+}

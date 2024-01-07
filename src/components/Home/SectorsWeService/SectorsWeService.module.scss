@@ -1,0 +1,50 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.title {
+  font: 600 32px/30px $font-merriweather;
+  text-align: center;
+
+  @include respond-to('medium') {
+    font: 600 40px/36px $font-merriweather;
+  }
+}
+
+.ctaButton {
+  display: flex;
+  justify-content: center;
+  margin: $site-spacing-xsm 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: $site-spacing-sm 0;
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $site-spacing-md;
+  }
+
+  @include respond-to('medium') {
+    column-gap: $site-spacing-lg;
+    padding: $site-spacing-md 0;
+  }
+
+  @include respond-to('large') {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+}

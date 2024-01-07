@@ -1,0 +1,81 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.sectionTitle {
+  font: 600 32px/30px $font-merriweather;
+  margin: 0;
+  
+  @include respond-to('medium') {
+    font: 600 40px/36px $font-merriweather;
+  }
+}
+
+.container {
+  margin-top: $site-spacing-md;
+
+  @include respond-to('medium') {
+    margin-top: $site-spacing-lg;
+  }
+}
+
+.questionCard {
+  border-top: 1px solid var(--primary-text-color);
+  display: block;
+  padding: $site-spacing-md 0;
+
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: space-between;
+    padding: $site-spacing-lg 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-lg + $site-spacing-xsm 0;
+  }
+}
+
+.left {
+  @include respond-to('medium') {
+    width: 50%;
+  }
+}
+
+.number {
+  font: 600 24px/32px $font-sans;
+  margin: 0;
+}
+
+.question {
+  font: 500 22px/32px $font-sans;
+  margin: $site-spacing-sm 0 $site-spacing-md;
+
+  @include respond-to('medium') {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+.answer {
+  font: 400 22px/32px $font-sans;
+
+  @include respond-to('medium') {
+    width: 60%;
+  }
+}
+
+.ctaButton {
+  display: flex;
+  justify-content: flex-end;
+}

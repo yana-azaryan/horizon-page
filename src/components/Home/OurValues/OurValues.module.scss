@@ -1,0 +1,32 @@
+@import '../../../styles/shared';
+@import '../../../styles/shared/fonts.scss';
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.sectionTitle {
+  font: 600 50px/48px $font-merriweather;
+  margin: 0;
+}
+
+.slogan {
+  font: 400 24px/30px $font-sans;
+  padding: $site-spacing-md 0;
+
+  @include respond-to('medium') {
+    padding: $site-spacing-lg 0;
+  }
+}
+
+.accordionContainer {
+  box-shadow: inset 0 4px 2px -2px $glitch;
+}

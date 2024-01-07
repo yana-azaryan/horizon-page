@@ -1,0 +1,64 @@
+@import '../../../styles/shared/';
+
+.container {
+  --carousel-gap: 32px;
+  --buttons-margin: 16px;
+  --count-slides-small: 1;
+  --count-slides-medium: 2;
+  --count-slides-large: 4;
+  --count-slides-xlarge: 6;
+
+  display: flex;
+}
+
+.slidesContainer {
+  display: grid;
+  gap: var(--carousel-gap);
+  grid-auto-columns: calc(
+    calc(
+      (100% - var(--carousel-gap) * (var(--count-slides-small) - 1)) /
+        (var(--count-slides-small))
+    )
+  );
+  grid-auto-flow: column;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond-to('medium') {
+    grid-auto-columns: calc(
+      calc(
+        (100% - var(--carousel-gap) * (var(--count-slides-medium) - 1)) /
+          (var(--count-slides-medium))
+      )
+    );
+  }
+
+  @include respond-to('large') {
+    grid-auto-columns: calc(
+      calc(
+        (100% - var(--carousel-gap) * (var(--count-slides-large))) /
+        (var(--count-slides-large) - 2)
+      )
+    );
+  }
+
+  @include respond-to('xlarge') {
+    grid-auto-columns: calc(
+      calc(
+        (100% - var(--carousel-gap) * (var(--count-slides-xlarge))) /
+        (var(--count-slides-xlarge) - 3)
+      )
+    );
+  }
+}
+
+.slide {
+  grid-template-rows: min-content;
+  scroll-snap-align: start;
+}

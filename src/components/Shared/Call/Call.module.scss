@@ -1,0 +1,107 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+
+.container {
+  display: inline-block;
+
+  @include respond-to('medium') {
+    display: flex;
+  }
+}
+
+.small {
+  height: 100%;
+  padding: $site-spacing-sm 0;
+
+  @include respond-to('medium') {
+    height: 780px;
+    padding: $site-spacing-md 0;
+  }
+}
+
+.large {
+  height: 100%;
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+    height: 780px;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.content {
+  width: 100%;
+
+  @include respond-to('medium') {
+    width: 50%;
+    margin-right: $site-spacing-lg;
+  }
+}
+
+.call {
+  display: none;
+
+  @include respond-to('large') {
+    display: block;
+    object-fit: cover;
+    width: 25%;
+    height: 100%;
+  }
+}
+
+.title {
+  font: 600 40px/42px $font-merriweather;
+  color: $glitch;
+  margin: $site-spacing-md 0;
+
+  @include respond-to('medium') {
+    font: 600 60px/64px $font-merriweather;
+    margin: 40px 0 $site-spacing-lg;
+  }
+
+  @include respond-to('large') {
+    font: 600 70px/64px $font-merriweather;
+  }
+}
+
+.subtitle {
+  font: 400 18px/20px $font-merriweather;
+  color: var(--primary-text-color);
+
+  @include respond-to('medium') {
+    font: 400 28px/38px $font-merriweather;
+  }
+}
+
+.description {
+  font: 400 14px/18px $font-sans;
+  margin: $site-spacing-sm 0 0;
+  max-width: 290px;
+
+  @include respond-to('xsmall') {
+    max-width: unset;
+  }
+
+  @include respond-to('medium') {
+    font: 400 22px/32px $font-sans;
+    margin-top: $site-spacing-xlg;
+  }
+}
+
+.scheduleCall {
+  display: none;
+
+  @include respond-to('xxsmall') {
+    display: block;
+    margin: $site-spacing-md 0;
+    min-width: 35%;
+  }
+
+  @include respond-to('medium') {
+    margin: 40px 0 $site-spacing-lg;
+  }
+}

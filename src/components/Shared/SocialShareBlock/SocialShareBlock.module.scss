@@ -1,0 +1,39 @@
+@import '../../../styles/shared';
+
+$social-share: #a1a1a1;
+$item-gutters-large: 32;
+$item-gutters: 14;
+
+.container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.shareItem {
+  width: 24px;
+
+  a {
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.large {
+  .shareItem {
+    padding: 8px;
+    width: 40px;
+  }
+}

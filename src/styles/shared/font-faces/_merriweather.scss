@@ -1,0 +1,47 @@
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 400;
+  src: local(merriweather),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-regular-webfont.woff2')
+      format('woff2'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-regular-webfont.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-bolditalic-webfont.woff2')
+      format('woff2'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-bolditalic-webfont.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-bold-webfont.woff2')
+      format('woff2'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-bold-webfont.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Merriweather Italic'), local('Merriweather-Italic'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-italic-webfont.woff2')
+      format('woff2'),
+    url('https://i.forbesimg.com/assets/fonts/merriweather/merriweather-italic-webfont.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

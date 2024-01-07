@@ -1,0 +1,59 @@
+@import '../../../styles/shared';
+@import '../../../styles/shared/fonts.scss';
+
+.success {
+  background: linear-gradient(90deg, rgb(232, 245, 218) 0%, rgb(147, 197, 247) 35%, rgb(133, 161, 238) 89%, rgb(160, 193, 226) 97%, rgb(144, 197, 230) 100%);
+  color: var(--primary-bg-color);
+  padding: $site-spacing-lg $site-spacing-xsm;
+
+  @include respond-to('medium') {
+    padding: 40px $site-spacing-md;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg;
+  }
+}
+
+.buttonCta {
+  display: flex;
+  margin: $site-spacing-md auto 0;
+  min-width: 200px;
+
+  @include respond-to('medium') {
+    margin: $site-spacing-lg auto 0;
+  }
+}
+
+.title {
+  font: 600 40px/40px $font-merriweather;
+  text-align: center;
+
+  @include respond-to('medium') {
+    font: 600 50px/56px $font-merriweather;
+  }
+}
+
+.subtitle {
+  font: 400 24px/32px $font-merriweather;
+  text-align: center;
+}
+
+.iconsList {
+  gap: $site-spacing-sm;
+  justify-content: center;
+
+  li {
+    margin: 0;
+    width: fit-content;
+  }
+}
+
+.iconsItem {
+  padding: $site-spacing-xsm;
+  width: 32px;
+
+  @include respond-to('medium') {
+    width: 40px;
+  }
+}

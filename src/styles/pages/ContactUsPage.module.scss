@@ -1,0 +1,50 @@
+@import '../shared';
+@import '../shared/fonts.scss';
+
+.theme {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.title {
+  font: 800 32px/24px $font-merriweather;
+  padding: $site-spacing-xsm $site-spacing-sm;
+
+  @include respond-to('small') {
+    font: 800 40px/28px $font-merriweather;
+    padding: $site-spacing-xsm $site-spacing-lg;
+  }
+
+  @include respond-to('medium') {
+    font: 800 56px/32px $font-merriweather;
+  }
+}
+
+.secondaryTitle {
+  color: $glitch;
+  padding: 0;
+}
+
+.content {
+  padding-bottom: $site-spacing-lg;
+
+  @include respond-to('medium') {
+    padding-bottom: 40px;
+  }
+
+  @include respond-to('large') {
+    padding-bottom: $site-spacing-xlg;
+  }
+}

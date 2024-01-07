@@ -1,0 +1,15 @@
+@import '../shared';
+
+.theme {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.calendly {
+  display: flex;
+  justify-content: center;
+
+  @include respond-to('xxsmall') {
+    display: none;
+  }
+}

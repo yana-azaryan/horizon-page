@@ -1,0 +1,61 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;700&display=swap');
+
+.container {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.sectionTitle {
+  font: 600 32px/30px $font-merriweather;
+  margin: 0;
+
+  @include respond-to('medium') {
+    font: 600 40px/36px $font-merriweather;
+  }
+}
+
+.carousel {
+  margin-top: $site-spacing-md; 
+
+  @include respond-to('medium') {
+    margin-top: $site-spacing-lg; 
+  }
+}
+
+.processCard {
+  background-color: var( --secondary-border-color);
+  color: var(--primary-bg-color);
+  letter-spacing: -0.2px;
+  border-radius: $site-spacing-xsm;
+  height: max-content;
+  padding: $site-spacing-md;
+  min-height: 350px;
+
+  @include respond-to('small') {
+    padding: $site-spacing-lg;
+  }
+}
+
+.number {
+  font: 900 40px/20px 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  color: $glitch;
+}
+
+.title {
+  font: 600 20px/24px $font-sans;
+  margin: $site-spacing-md 0;
+}
+
+.description {
+  font: 400 20px/24px $font-sans;
+}

@@ -1,0 +1,196 @@
+/*
+ * Shared Mixins
+ * ======================================================================== */
+
+// ===== Typography ===== //
+
+@mixin label-lrg {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+@mixin headline {
+  font: 700 24px/1.33 $font-merriweather;
+}
+
+@mixin headline-lrg {
+  @include headline;
+}
+
+@mixin headline-md {
+  @include headline;
+
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+@mixin headline-sm {
+  @include headline;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+// ===== Buttons & Links ===== //
+
+@mixin arrow-btn {
+  align-items: center;
+  background-color: $color-btn-default-bg;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: $site-spacing-xsm;
+  width: 32px;
+
+  svg {
+    fill: $color-grey-70;
+    width: $site-spacing-sm;
+  }
+}
+
+@mixin arrow-btn-disabled {
+  background-color: $color-bg-ticker-carousel-arrows-off;
+  cursor: default;
+
+  svg {
+    fill: rgba($color-grey-70, 0.5);
+  }
+}
+
+@mixin arrow-link-right {
+  align-items: center;
+  color: $color-text-dark-default;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  svg {
+    fill: currentColor;
+    margin-left: $site-spacing-xsm;
+    width: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    svg {
+      transform: translateX($site-spacing-sm);
+    }
+  }
+}
+
+@mixin button-rounded {
+  @include button-reset;
+
+  align-items: center;
+  background: $pale-gray;
+  border-radius: 16px;
+  display: flex;
+  font-size: 12px;
+  height: 32px;
+  line-height: 1;
+  outline: 0;
+  padding: 0 $site-spacing-sm;
+
+  @media (hover: hover) {
+    &:focus-visible,
+    &:hover {
+      background: $color-category-pill;
+      color: $color-text-light-default;
+    }
+  }
+}
+
+// ===== Utilities ===== //
+
+/**
+ * Resets button styles to resemble text links.
+ */
+@mixin button-reset {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+/**
+ * Provides text for screen readers that is visually hidden.
+ */
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/**
+ * Full browser width container inside a limited-width parent.
+ */
+@mixin full-width-breakout {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+/**
+ * Displays a label for ads.
+ */
+@mixin ad-label {
+  color: var(--ad-label-color);
+  content: 'ADVERTISEMENT';
+  display: flex;
+  font-size: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+/**
+ * Organizing z-index.
+ * @param {String} $key The key to retrieve the z-index value from the z-index map.
+ */
+@mixin z-index($key) {
+  z-index: map-get($z-index, $key);
+}
+
+/*
+ * Watchlist
+ * ======================================================================== */
+
+/**
+ * Label that appears for the watchlist edit state.
+ */
+@mixin watchlist-edit-label {
+  color: $color-accent-text;
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  right: 32px;
+  text-transform: capitalize;
+}
+
+/**
+ * clamp text content.
+ * @param {Number} $line-clamp The number of lines to display before truncating.
+ */
+@mixin clamp-text($line-clamp: 3) {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  overflow-y: hidden;
+}

@@ -1,0 +1,74 @@
+@import '../../../styles/shared/';
+@import '../../../styles/shared/fonts.scss';
+
+.wrapper {
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('medium') {
+    padding: 40px 0;
+  }
+
+  @include respond-to('large') {
+    padding: $site-spacing-xlg 0;
+  }
+}
+
+.container {
+  display: grid;
+  padding: $site-spacing-lg 0;
+
+  @include respond-to('small') {
+    column-gap: $site-spacing-lg;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond-to('medium') {
+    column-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 0;
+    row-gap: $site-spacing-lg;
+  }
+
+  @include respond-to('large') {
+    column-gap: $site-spacing-xlg;
+  }
+}
+
+.sectionTitle {
+  font: 600 32px/30px $font-merriweather;
+  margin: 0;
+
+  @include respond-to('medium') {
+    font: 600 40px/36px $font-merriweather;
+  }
+}
+
+.possibility {
+  animation: slideIn 10s forwards;
+  border-top: 1px solid var(--primary-text-color);
+  padding: $site-spacing-lg 0;
+}
+
+.title {
+  font: 600 24px/24px $font-sans;
+  margin: $site-spacing-sm 0;
+
+  @include respond-to('medium') {
+    margin: $site-spacing-md 0;
+  }
+}
+
+.description {
+  font: 400 18px/22px $font-sans;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

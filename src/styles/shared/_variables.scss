@@ -1,0 +1,28 @@
+/*
+ * Shared Variables
+ * ======================================================================== */
+
+@import 'colors';
+
+// ===== Base container dimensions ===== //
+
+$site-header-height: 64px;
+$site-max-width: 1440px !default;
+$search-input-width: 322px;
+$subnav-mobile-height: 86px;
+$legal-disclaimer-width-lg: 928px;
+
+$container-sizes: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+);
+
+// ===== Base spacing ===== //
+
+$site-spacing-xsm: 8px;
+$site-spacing-sm: 16px;
+$site-spacing-md: 24px;
+$site-spacing-lg: 32px;
+$site-spacing-xlg: 64px;

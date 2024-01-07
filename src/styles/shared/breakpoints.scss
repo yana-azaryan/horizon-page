@@ -1,0 +1,84 @@
+/*
+ * Shared Breakpoints
+ * ======================================================================== */
+
+$breakpoints: (
+  xxsmall: (
+    min-width: 350px,
+  ),
+  xsmall: (
+    min-width: 420px,
+  ),
+  small: (
+    min-width: 520px,
+  ),
+  medium: (
+    min-width: 768px,
+  ),
+  large: (
+    min-width: 1024px,
+  ),
+  xlarge: (
+    min-width: 1440px,
+  ),
+);
+
+/**
+ * Responsive breakpoint manager.
+ *
+ * @param {string} $breakpoint - The breakpoint value.
+ * @requires $breakpoints
+ */
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      $raw-query,
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1440px,
+) !default;
+
+@mixin bp-above($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  }
+
+  // If the breakpoint doesn't exist in the map.
+  @else {
+    @warn 'Invalid breakpoint (bp-above): #{$breakpoint}.';
+  }
+}
+
+@mixin bp-below($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    @warn 'Invalid breakpoint (bp-below): #{$breakpoint}.';
+  }
+}

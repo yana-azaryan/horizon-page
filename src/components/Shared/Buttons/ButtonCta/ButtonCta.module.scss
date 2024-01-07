@@ -1,0 +1,53 @@
+@import '../../../../styles/shared/';
+
+.button {
+  align-self: center;
+  background-color: var(--primary-bg-color);
+  border: none;
+  color:  var(--primary-text-color);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: 600;
+    color:  $glitch;
+  }
+}
+
+.border {
+  border: 1.5px solid  $glitch;
+}
+
+.small {
+  font-size: 14px;
+  min-height: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.medium {
+  font-size: 16px;
+  min-height: 40px;
+  padding: 11px 16px;
+  border-radius: 20px;
+}
+
+.large {
+  font-size: 18px;
+  min-height: 48px;
+  padding: 16px 32px;
+  border-radius: 40px;
+}
+
+.iconContainer {
+  align-self: center;
+  height: 24px;
+  margin-right: 16px;
+  width: 24px;
+
+  svg > * {
+    fill: var(--primary-text-color);
+  }
+}

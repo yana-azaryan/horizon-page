@@ -1,0 +1,55 @@
+@import '../../../../styles/shared/';
+
+.buttonLinkContainer {
+  align-self: center;
+}
+
+.buttonLink {
+  color:  var(--primary-text-color);
+  display: flex;
+  text-decoration: none;
+
+  svg {
+    fill:  var(--primary-text-color);
+  }
+  
+  &:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color:  $glitch;
+
+    svg {
+      fill: $glitch;
+      transform: translate(8px);
+    }
+  }
+}
+
+.small {
+  font-size: 16px;
+
+  svg {
+    width: 20px;
+    margin-left: 8px;
+  }
+}
+
+.medium {
+  font-size: 18px;
+
+  svg {
+    width: 24px;
+    margin-left: 10px;
+
+  }
+}
+
+.large {
+  font-size: 24px;
+
+  svg {
+    width: 28px;
+    margin-left: 12px;
+  }
+}
+

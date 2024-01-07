@@ -1,0 +1,32 @@
+@import '../../../styles/shared';
+
+$colors: (
+  facebook: #3b5998,
+  linkedin: #0077b5,
+);
+
+@mixin icon-hover-modifier {
+  @each $name, $color in $colors {
+    &.#{$name}:hover {
+      svg {
+        fill: $color;
+      }
+    }
+  }
+}
+
+.shareItem {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  padding: 2px;
+  width: 24px;
+
+  & > svg {
+    width: 24px;
+    display: block;
+    fill: currentcolor;
+  }
+
+  @include icon-hover-modifier;
+}
