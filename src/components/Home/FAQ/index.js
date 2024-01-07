@@ -39,8 +39,8 @@ const FAQ = ({ title, data, length, btnProps }) => {
 FAQ.propTypes = {
   title: PropTypes.string,
   data: PropTypes.array.isRequired,
-  length: PropTypes.number,
   btnProps: PropTypes.object,
+  length: PropTypes.number,
 };
 
 FAQ.defaultProps = {
