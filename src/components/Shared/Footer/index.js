@@ -48,7 +48,7 @@ const Footer = ({ className, theme, _ref }) => (
         <div className={styles.branding}>
           <div
             className={styles.copyright}
-          >{`\u00A9 ${new Date().getFullYear()} Logo LLC. All Rights Reserved.`}</div>
+          >{`\u00A9 ${new Date().getFullYear()} Horizon LLC. All Rights Reserved.`}</div>
         </div>
       </div>
     </div>

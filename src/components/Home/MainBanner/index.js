@@ -30,9 +30,9 @@ MainBanner.propTypes = {
 };
 
 MainBanner.defaultProps = {
-  title: 'The Angent You Are Looking For',
+  title: 'Your Remote Customer Support Team Awaits',
   description:
-    'We partner with industry-leading clients to offer them exciting talents and opportunities.',
+    'Empower Your Business. Partner with Us to Build Your Ultimate Remote Customer Support Team and Ignite Positive Change!',
   buttonProps: {
     content: 'Learn More',
     href: '/faqs',

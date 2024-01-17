@@ -8,7 +8,7 @@
   text-align: center;
 
   @include respond-to('medium') {
-    padding: 40px 0;
+    padding: 48px 0;
   }
 
   @include respond-to('large') {
@@ -17,7 +17,7 @@
 }
 
 .title {
-  font: 600 32px/28px $font-merriweather;
+  font: 600 32px/34px $font-merriweather;
   margin: 0 auto;
   width: 90%;
 

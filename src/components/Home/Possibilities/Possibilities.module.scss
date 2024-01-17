@@ -17,12 +17,12 @@
   display: grid;
   padding: $site-spacing-lg 0;
 
-  @include respond-to('small') {
+  @include respond-to('medium') {
     column-gap: $site-spacing-lg;
     grid-template-columns: 1fr 1fr;
   }
 
-  @include respond-to('medium') {
+  @include respond-to('large') {
     column-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 40px 0;
@@ -44,9 +44,9 @@
 }
 
 .possibility {
-  animation: slideIn 10s forwards;
+  animation: slideIn 5s forwards;
   border-top: 1px solid var(--primary-text-color);
-  padding: $site-spacing-lg 0;
+  padding: $site-spacing-md 0;
 }
 
 .title {

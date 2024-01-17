@@ -37,8 +37,8 @@ const Process = ({ data, title }) => {
               <div className={styles.title}>{step.title}</div>
               <ReadMore
                 className={styles.description}
-                showMoreText={'Read More'}
-                showLessText={'Read Less'}
+                showMoreText={'See More'}
+                showLessText={'See Less'}
                 data={step.description}
                 initialNumOfCharsToShow={200}
               />
@@ -56,7 +56,7 @@ Process.propTypes = {
 };
 
 Process.defaultProps = {
-  title: 'How Do Our Services Work',
+  title: 'Navigating the Seamless Journey of Partnership',
 };
 
 export default Process;

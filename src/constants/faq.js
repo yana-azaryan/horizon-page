@@ -1,43 +1,43 @@
 export const faqsData = [
   {
-    question: 'What services do you offer as a web development company?',
+    question: 'How can I contact your customer support team?',
     answer:
-      'We provide a range of services including responsive web design, custom web application development, e-commerce solutions, user interface (UI) and user experience (UX) design, content management systems, and more.',
+      'You can reach our customer support team by submitting a request on Contact Us Page, scheudling a call via our webiste or emailing us at infogrouphorizon@gmail.com.',
   },
   {
-    question: 'How long does it typically take to develop a website?',
+    question: 'Is there a minimum contract period for your services?',
     answer:
-      'The development timeline depends on the complexity of the project. Simple websites can take a few weeks, while larger projects with custom features might take a couple of months. We work closely with you to provide accurate estimates based on your specific requirements.',
+      'We offer flexibility in our contract durations. While we recommend longer-term commitments for optimal results, we can discuss and tailor contract periods based on your specific needs.',
   },
   {
-    question: 'Do you provide ongoing maintenance and support for websites?',
+    question: 'How do you ensure the continuous training of your remote team?',
     answer:
-      'Yes, we offer ongoing maintenance and support services to ensure your website remains up-to-date, secure, and functional. Our team is available to address any issues and implement updates as needed.',
+      'We have a structured ongoing training program to keep our team updated with the latest industry trends and technologies. This ensures that they remain adept at handling diverse customer support needs.',
   },
   {
-    question: 'Can you help with search engine optimization (SEO)?',
+    question: 'What types of businesses do you typically work with?',
     answer:
-      'Absolutely! We integrate SEO best practices into our development process to ensure your website is optimized for search engines. This helps improve your online visibility and drives organic traffic to your site.',
+      'We work with a diverse range of businesses, from startups to established enterprises. Our flexible solutions can be tailored to meet the specific needs of businesses across various industries.',
   },
   {
-    question: 'What technologies do you use for web development?',
+    question: 'Is there a dedicated account manager for ongoing support?',
     answer:
-      "We are proficient in a wide range of technologies including HTML5, CSS3, JavaScript, ReactJs, Node.js, PHP, WordPress, and more. We choose the best technology stack based on your project's requirements.",
+      "Yes, each client is assigned a dedicated account manager who serves as the primary point of contact for ongoing support, ensuring a personalized and responsive relationship.",
   },
   {
-    question: 'How do you ensure responsive design for mobile devices?',
+    question: 'How long has your company been providing customer support services?',
     answer:
-      'We prioritize responsive design in all our projects, ensuring that websites automatically adapt to different screen sizes and devices. This approach provides a seamless user experience across desktops, tablets, and smartphones.',
+      'Our company brings 5 years of expertise in delivering exceptional customer support services. Our extensive experience ensures a nuanced understanding of diverse business needs.',
   },
   {
-    question: 'Can you integrate third-party services into our website?',
+    question: 'How do you ensure a smooth transition during the onboarding phase for new clients?',
     answer:
-      'Yes, we can integrate various third-party services such as payment gateways, social media platforms, analytics tools, and more, to enhance the functionality and features of your website.',
+      'Our onboarding process is refined through years of experience. We have a systematic approach that includes comprehensive training, seamless integration, and dedicated support to ensure a smooth transition for our clients.',
   },
   {
-    question: 'Do you offer e-commerce solutions?',
+    question: 'How do you handle continuous improvement based on client feedback and changing industry dynamics?',
     answer:
-      'Yes, we specialize in creating e-commerce platforms that are secure, user-friendly, and optimized for conversions. Our solutions include product catalogs, shopping carts, secure payment processing, and inventory management.',
+      'We value client feedback as a catalyst for improvement. Our experienced team actively seeks and incorporates feedback into our processes. Additionally, we stay agile, adapting to changing industry dynamics through ongoing training and strategic adjustments.',
   },
   {
     question: 'How do you ensure the security of websites and user data?',
@@ -46,47 +46,47 @@ export const faqsData = [
   },
   {
     question:
-      'What is the process for starting a web development project with your company?',
+      'How do you keep your remote team cost-efficient?',
     answer:
-      "To start a project, simply get in touch with us. We'll have an initial consultation to understand your needs and goals. From there, we'll provide a detailed proposal, a project timeline, and work closely with you to bring your vision to life.",
+      "Our strategy involves smart resource allocation, efficient workflows, and leveraging technology. By optimizing operational costs, we maintain affordability without compromising the high standards that define our team's performance. It's a delicate balance that ensures you get exceptional service without exceeding your budget.",
   },
 ];
 
 export const sectorsWeService = [
   {
     href: '/contact-us',
-    title: 'E-commerce Businesses',
+    title: 'Healthcare Providers',
     description:
-      "Revamp your online store with our web solutions. We'll design an attractive, user-friendly website to ensure secure, seamless transactions, and ultimate shopping experience.",
+      'Designed for healthcare providers, our services ensure seamless patient communication, multilingual support, and adaptable solutions. With a proven track record in the healthcare industry, we guarantee HIPAA compliance, robust data security, and a personalized approach. Let us handle the support, allowing you to focus on delivering exceptional healthcare services.',
+  },
+  {
+    href: '/contact-us',
+    title: 'Real Estate',
+    description:
+      "Elevate Your Real Estate Operations with Our Support Services: Our services streamline client interactions, optimize workflows, and offer adaptable support for diverse demands. We provide efficiency, personalized service, and a dedication to your business growth. Let us manage the support tasks, empowering you to focus on expanding your real estate endeavors effortlessly.",
+  },
+  {
+    href: '/contact-us',
+    title: 'Isurance',
+    description:
+      "Revolutionize Your Insurance Business with Our Specialized Support Services: We enhance client interactions, optimize workflows, and offer flexible support to adapt to your dynamic needs. From policy inquiries to claims assistance, we bring efficiency, personalized service, and a commitment. Allow us to navigate the support journey, freeing up your resources to concentrate on your insurance enterprise.",
+  },
+  {
+    href: '/contact-us',
+    title: 'E-Commerce',
+    description:
+      "Transform Your E-Commerce Venture with Our Comprehensive Support Solutions: From order inquiries to resolution management, we bring efficiency, personalized service, and a commitment to your business success. Let us handle the support tasks, allowing you to focus on scaling and optimizing your e-commerce operations effortlessly.",
+  },
+  {
+    href: '/contact-us',
+    title: 'Construction',
+    description:
+      "Optimize Your Construction Business with Our Customized Support Solutions: Our services redefine client interactions, streamline operations, and offer adaptable support for varying project demands. Let us manage the support tasks, freeing up your resources to concentrate on driving growth and excellence in your construction projects.",
   },
   {
     href: '/contact-us',
     title: 'Startups',
     description:
-      "Boost your startup's growth with our web solutions. We create pro websites and apps for quick user and investor attraction. Stay ahead in the competitive startup scene with our scalable tech.",
-  },
-  {
-    href: '/contact-us',
-    title: 'Professional Service',
-    description:
-      "Elevate your professional services with our web solutions. We'll craft appointment systems and secure client portals, freeing you to focus on your expertise and provide top-notch service.",
-  },
-  {
-    href: '/contact-us',
-    title: 'Educational Institutions',
-    description:
-      'Empower your institution with our advanced e-learning solutions. We create top-tier platforms and portals, enhancing remote learning and administrative excellence for world-class education.',
-  },
-  {
-    href: '/contact-us',
-    title: 'Healthcare Providers',
-    description:
-      'Improve patient care and accessibility with our healthcare web solutions. Our patient portals, telemedicine, and appointment systems ensure timely, secure, and convenient care.',
-  },
-  {
-    href: '/contact-us',
-    title: 'Online Portfolios',
-    description:
-      'Showcase yourself with our tailored web solutions. Designed to showcases your best work, attract potential clients, and leave a lasting impression in your industry.',
+      "Empower Your Startup's Growth with Our Dynamic Support Services: We amplify customer interactions, streamline workflows, and provide agile support tailored to the dynamic nature of emerging businesses. From initial inquiries to scaling strategies, we bring efficiency, personalized service, and a commitment for your startup's success.",
   },
 ];
